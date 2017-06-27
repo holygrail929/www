@@ -9,3 +9,32 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1em;
   font-weight: normal;
 }
+/* 레이아웃 */
+.wrapper{
+  background-color: silver;
+  height: 100vh;
+}
+.header, .visual, .main-content, .slogan, .footer{
+  width: 940px;
+  margin: 0 auto;
+}
+.header{
+  background-color: pink;
+  height: 10vh;
+}
+.visual{
+  background-color: lime;
+  height: 10vh;
+}
+.main-content{
+  background-color: blue;
+  height: 60vh;
+}
+.slogan{
+  background-color: yellow;
+  height: 10vh;
+}
+.footer{
+  background-color: skyblue;
+  height: 10vh;
+}
