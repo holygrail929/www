@@ -166,15 +166,50 @@ a {
     font-size: 1.6rem;
     font-family: "Noto Sans Bold";
     color: rgba(255, 255, 255, 0.95);
-    padding: 10px 21px 10px 20px;
     display: block;
+    padding: 0 20px;
+    line-height: 45px;
     border-left: 2px solid rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 0px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000, 0px 1px 0 #000;
+}
+
+.main-menu>li>a:hover {
+    color: #ff0;
+}
+
+.main-menu>li>a:hover::after {
+    content: "";
+    display: block;
+    border-top: 2px solid #181818;
 }
 
 .main-menu ul {
     list-style-type: none;
     background: lime;
     position: absolute;
+}
+
+.about-html {
+    display: block;
+}
+
+.about-css {
+    display: none;
+}
+
+.web-standard {
+    display: none;
+}
+
+.web-accessibility {
+    display: none;
+}
+
+.qna {
+    display: none;
+}
+
+.archive {
     display: none;
 }
 
