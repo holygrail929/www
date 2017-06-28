@@ -58,12 +58,12 @@ h6 {
 /* 기본 스타일 */
 
 html {
-    font-style: 10px;
+    font-size: 10px;
 }
 
 body {
     font-family: 'Noto Sans Regular', sans-serif;
-    font-style: 1.4rem;
+    font-size: 1.4rem;
 }
 
 
@@ -109,7 +109,7 @@ a {
 
 .logo {
     position: absolute;
-    top: 45px;
+    top: 50px;
     left: 60px;
 }
 
@@ -146,6 +146,38 @@ a {
     content: "";
 }
 
+
+/* 메인 메뉴 */
+
+.main-menu {
+    background: linear-gradient(to bottom, #e5892d 0%, #e0652c 35%, #e0652c 65%, #e5892d 100%);
+    list-style-type: none;
+    border-top: 2px solid #181818;
+    border-radius: 0 0 5px 5px;
+    padding-left: 225px;
+    height: 45px;
+}
+
+.main-menu>li {
+    float: left;
+}
+
+.main-menu>li>a {
+    font-size: 1.6rem;
+    font-family: "Noto Sans Bold";
+    color: rgba(255, 255, 255, 0.95);
+    padding: 10px 21px 10px 20px;
+    display: block;
+    border-left: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+.main-menu ul {
+    list-style-type: none;
+    background: lime;
+    position: absolute;
+    display: none;
+}
+
 .visual {
     height: 120px;
 }
@@ -165,7 +197,7 @@ a {
 
 .group1 {
     width: 250px;
-    /*align-self: flex-end;*/
+    /*align-self: flex-end; 혼자만 이동*/
 }
 
 .group2 {
