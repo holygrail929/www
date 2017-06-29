@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>float 속성 익히기</title>
+    <style>
+        .box {
+            background: yellow;
+            width: 500px;
+            /*overflow: hidden;*/
+        }
+        
+        .box::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        .box img {
+            float: right;
+            position: relative;
+            right: -50px;
+        }
+        
+        .note {
+            background: pink;
+            /*clear: both;
+            margin-top: 10px;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="../images/news.gif" alt="">긴장을 하거나 신경 쓰이는 일이 있을 때 무의식적으로 하는 행동들이 있습니다.
+    </div>
+    <div class="note">긴장을 하거나 신경 쓰이는 일이 있을 때 무의식적으로 하는 행동들이 있습니다. 볼펜을 물거나, 머리카락을 손가락으로 꼬는 등 대부분 의미 없는 습관들인데요. 하지만 겉보기에는 무해해 보이는 이런 습관들이 건강에 해로울 수 있다고 합니다.</div>
+</body>
+
+</html>
