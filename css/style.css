@@ -98,10 +98,9 @@ a {
 
 .header {
     background-color: #ffffff;
-    min-height: 115px;
     border-radius: 0 0 15px 15px;
     position: relative;
-    padding: 0 30px;
+    padding: 0 30px 40px 30px;
 }
 
 
@@ -163,7 +162,7 @@ a {
     position: relative;
 }
 
-.main-menu>li>a {
+.main-menu span {
     font-size: 1.6rem;
     font-family: "Noto Sans Bold";
     color: rgba(255, 255, 255, 0.95);
@@ -174,11 +173,14 @@ a {
     text-shadow: 1px 0px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000, 0px 1px 0 #000;
 }
 
-.main-menu>li>a:hover {
+.main-menu span:hover,
+.main-menu span:focus {
     color: #ff0;
+    outline: 0;
 }
 
-.main-menu>li>a:hover::after {
+.main-menu span:hover::after,
+.main-menu span:focus::after {
     content: "";
     display: block;
     border-top: 2px solid #181818;
@@ -186,42 +188,60 @@ a {
 
 .main-menu ul {
     list-style-type: none;
-    background: lime;
     position: absolute;
     white-space: nowrap;
+    top: 47px;
 }
 
 .main-menu ul li {
     display: inline-block;
 }
 
-.about-html {
-    display: block;
-    top: 47px;
+.main-menu ul a::before {
+    font-family: "webcafeIcon";
+    content: "r";
+    position: relative;
+    top: 2px;
 }
 
-.about-html li::before {
-    content: "·";
+.main-menu ul a:hover::before,
+.main-menu ul a:focus::before {
+    content: "c";
+}
+
+.main-menu ul a {
+    padding: 8px 15px 7px 0;
+    display: block;
+}
+
+.about-html {
+    display: none;
+    left: 0;
 }
 
 .about-css {
     display: none;
+    left: 0;
 }
 
 .web-standard {
     display: none;
+    left: 0;
 }
 
 .web-accessibility {
     display: none;
+    left: -140px;
 }
 
 .qna {
     display: none;
+    left: -170px;
 }
 
 .archive {
     display: none;
+    right: -25px;
 }
 
 .visual {
