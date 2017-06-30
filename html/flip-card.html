@@ -23,17 +23,17 @@
         .front,
         .back {
             position: absolute;
-            width: 100%;
-            height: 100%;
+            width: 200px;
+            height: 260px;
             backface-visibility: hidden;
         }
         
         .front {
-            background: red;
+            background: url();
         }
         
         .back {
-            background: blue;
+            background: url();
             transform: rotateY( 180deg);
         }
         
@@ -46,17 +46,23 @@
 <body>
     <div class="container">
         <div id="card">
-            <div class="front">앞면</div>
-            <div class="back">뒷면</div>
+            <img src="http://cdn.instructables.com/FWB/4U07/GOHM3XVU/FWB4U07GOHM3XVU.LARGE.jpg" alt="" class="front">
+            <img src="http://media.istockphoto.com/vectors/playing-card-back-side-62x90-mm-vector-id159021731?s=2048x2048" alt="" class="back">
         </div>
     </div>
+    <button class="btn">Click Me!</button>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script>
         $(function() {
             $("#card").click(function() {
                 $(this).toggleClass("flipped");
             });
-        })
+        });
+        $(function() {
+            $(".btn").on("click", function() {
+                $("#card").toggleClass("flipped");
+            });
+        });
     </script>
 </body>
 
