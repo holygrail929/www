@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 100px;
+        }
+        
+        .container {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            perspective: 1000px;
+        }
+        
+        #cube {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transform: translate(-100px);
+        }
+        
+        #cube div {
+            width: 196px;
+            height: 196px;
+            display: block;
+            position: absolute;
+            border: 2px solid black;
+            font-size: 60px;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            line-height: 196px;
+            transition: transform 0.5s;
+        }
+        
+        #cube.show-front .front {
+            transform: rotateX( 180deg) translateZ(100px);
+        }
+        
+        #cube.show-back .back {
+            transform: rotateX( 0deg) translateZ(100px);
+        }
+        
+        #cube.show-right .right {
+            transform: rotateX( 0deg) translateZ(100px);
+        }
+        
+        #cube.show-left .left {
+            transform: rotateX( 0deg) translateZ(100px);
+        }
+        
+        #cube.show-top .top {
+            transform: rotateX( 0deg) translateZ(100px);
+        }
+        
+        #cube.show-bottom .bottom {
+            transform: rotateX( 0deg) translateZ(100px);
+        }
+        
+        .front {
+            background: hsla(0, 100%, 50%, 0.7);
+            transform: rotateY( 0deg) translateZ(100px);
+        }
+        
+        .back {
+            background: hsla(60, 100%, 50%, 0.7);
+            transform: rotateX( 180deg) translateZ(100px);
+        }
+        
+        .right {
+            background: hsla(120, 100%, 50%, 0.7);
+            transform: rotateY( 90deg) translateZ(100px);
+        }
+        
+        .left {
+            background: hsla(180, 100%, 50%, 0.7);
+            transform: rotateY( -90deg) translateZ(100px);
+        }
+        
+        .top {
+            background: hsla(240, 100%, 50%, 0.7);
+            transform: rotateX( 90deg) translateZ(100px);
+        }
+        
+        .bottom {
+            background: hsla(300, 100%, 50%, 0.7);
+            transform: rotateX( -90deg) translateZ(100px);
+        }
+        
+        .btn-wrap {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="cube">
+            <div class="front show-front">1</div>
+            <div class="back show-back">2</div>
+            <div class="right show-right">3</div>
+            <div class="left show-left">4</div>
+            <div class="top show-top">5</div>
+            <div class="bottom show-bottom">6</div>
+        </div>
+    </div>
+    <div class="btn-wrap">
+        <button class="btn-front">front</button>
+        <button class="btn-back">back</button>
+        <button class="btn-right">right</button>
+        <button class="btn-left">left</button>
+        <button class="btn-top">top</button>
+        <button class="btn-bottom">bottom</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $(".btn-front").on("click", function() {
+                $("#cube").toggleClass("show-front");
+            });
+            $(".btn-back").on("click", function() {
+                $("#cube").toggleClass("show-back");
+            });
+            $(".btn-right").on("click", function() {
+                $("#cube").toggleClass("show-right");
+            });
+            $(".btn-left").on("click", function() {
+                $("#cube").toggleClass("show-left");
+            });
+            $(".btn-top").on("click", function() {
+                $("#cube").toggleClass("show-top");
+            });
+            $(".btn-bottom").on("click", function() {
+                $("#cube").toggleClass("show-bottom");
+            });
+        });
+    </script>
+</body>
+
+</html>
