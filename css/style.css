@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import "fontello.css";
 
 /* 웹폰트 선언 */
 
@@ -26,9 +27,10 @@
 
 /*숨김 콘텐츠*/
 
-legend {
+legend,
+.hidden {
     position: absolute;
-    left: -9999em;
+    left: -99999em;
 }
 
 
@@ -72,6 +74,15 @@ html {
 body {
     font-family: 'Noto Sans Regular', sans-serif;
     font-size: 1.4rem;
+}
+
+input,
+textarea,
+select,
+option,
+button {
+    font-family: inherit;
+    font-size: inherit;
 }
 
 
@@ -338,6 +349,102 @@ a {
 /*로그인*/
 
 .login {
+    padding: 10px;
+    border-radius: 5px;
+    background: radial-gradient(circle at right top, #e5892d, #e0652c);
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.login-heading {
+    color: #ff0;
+    font-family: "Noto Sans Bold";
+    font-size: 1.6rem;
+    text-indent: 10px
+}
+
+.login-form {
+    background: #fff;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.login-form fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 10px;
+}
+
+.user-pw {
+    margin-top: 6px;
+}
+
+.login-form label {
+    width: 4em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.login-form input {
+    box-sizing: border-box;
+    width: 95px;
+    height: 22px;
+    border: 1px solid #aaa;
+    padding: 1px 1px 1px 5px;
+}
+
+.btn-login {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    background: hsla(0, 100%, 50%, 1);
+    color: #fff;
+    border-radius: 3px;
+}
+
+.member {
+    /*앞에 동그라미가 사라짐*/
+    list-style-type: none;
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    padding: 0 10px 10px 10px;
+}
+
+
+/*float 이슈를 해결하기 위한 clear fix*/
+
+.member::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.icon-user::before,
+.icon-ok::before {
+    color: #f00;
+}
+
+.join {
+    font-size: 13px;
+    float: left;
+}
+
+.find {
+    font-size: 13px;
+    float: right;
+}
+
+
+/*
+.login {
     background: radial-gradient(circle at right top, #e5892d, #e0652c);
     padding: 10px;
     border-radius: 5px;
@@ -405,6 +512,28 @@ a {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+}*/
+
+
+/*유효성 검사 배너 링크*/
+
+.validation {
+    margin-top: 20px;
+}
+
+.validation-list li {
+    list-style-type: none;
+}
+
+.validation-list a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    text-indent: 40px;
+    background: url("images/validation_icon.png") no-repeat 15px 50%, linear-gradient(to bottom, #eee, #ccc);
 }
 
 .slogan {

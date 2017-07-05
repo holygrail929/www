@@ -6,9 +6,9 @@
 <font id="fontello" horiz-adv-x="1000" >
 <font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
 <missing-glyph horiz-adv-x="1000" />
-<glyph glyph-name="user" unicode="&#xe800;" d="M353 351q139 0 237-99t98-236q0-47-33-80t-79-33l-446 0q-46 0-79 33t-33 80q0 138 98 236t237 99z m-167 279q0 167 167 167 168 0 168-167 0-168-168-168-167 0-167 168z" horiz-adv-x="705" />
+<glyph glyph-name="user" unicode="&#xe800;" d="M714 69q0-60-35-104t-84-44h-476q-49 0-84 44t-35 104q0 48 5 90t17 85 33 73 52 50 76 19q73-72 174-72t175 72q42 0 75-19t52-50 33-73 18-85 4-90z m-143 495q0-88-62-151t-152-63-151 63-63 151 63 152 151 63 152-63 62-152z" horiz-adv-x="714.3" />
 
-<glyph glyph-name="ok" unicode="&#xe801;" d="M352-10l-334 333 158 160 176-174 400 401 159-160z" horiz-adv-x="928" />
+<glyph glyph-name="ok" unicode="&#xe801;" d="M933 534q0-22-16-38l-404-404-76-76q-16-15-38-15t-38 15l-76 76-202 202q-15 16-15 38t15 38l76 76q16 16 38 16t38-16l164-165 366 367q16 16 38 16t38-16l76-76q16-15 16-38z" horiz-adv-x="1000" />
 </font>
 </defs>
 </svg>
