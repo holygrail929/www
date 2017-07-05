@@ -563,7 +563,10 @@ a {
     clear: both;
 }
 
-.term-list-subject {}
+.term-list-subject {
+    color: #296897;
+    font-family: "Noto Sans Bold";
+}
 
 .term-list-thumbnail {
     float: left;
