@@ -128,7 +128,7 @@ a {
 
 .logo {
     position: absolute;
-    top: 50px;
+    top: 45px;
     left: 60px;
 }
 
@@ -639,18 +639,59 @@ a {
     border: 1px solid #aaa;
     border-bottom: 0;
     border-radius: 15px 15px 0 0;
+    padding: 15px 25px 5px 25px;
 }
 
-.searching {
-    margin: 20px 5px 15px 40px;
-    display: inline-block;
+.search-form fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
-.searching label {
+.search-form label::before {
+    /*돋보기 모양 아이콘*/
+    content: "z";
+    font-family: "webcafeIcon";
+    position: relative;
+    top: 2px;
+}
+
+.search-form input {
+    width: 195px;
+    height: 24px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 1px 1px 1px 5px;
+    margin: 0 5px;
+}
+
+.btn-search {
+    border: 1px solid #aaa;
+    padding: 0 10px;
+    height: 24px;
+    border-radius: 3px;
+    color: #FFF;
+    background: linear-gradient(to bottom, #333, #999);
+}
+
+
+/*.search {
+    background: linear-gradient(to bottom, #ccc, #fff);
+    border: 1px solid #aaa;
+    border-bottom: 0;
+    border-radius: 15px 15px 0 0;
+}
+
+.search fieldset {
+    border: 0;
+    margin: 15px 10px 10px 20px;
+}
+
+.search label {
     margin-right: 5px;
 }
 
-.searching input {
+.search input {
     width: 200px;
     height: 22px;
 }
@@ -662,7 +703,7 @@ a {
     border-radius: 3px;
     padding: 0 10px;
     cursor: pointer;
-}
+}*/
 
 .slogan {
     height: 10vh;
