@@ -705,6 +705,160 @@ a {
     cursor: pointer;
 }*/
 
+
+/*공지사항 및 자료실*/
+
+.board {
+    margin-top: 20px;
+    position: relative;
+    height: 180px;
+}
+
+.notice-heading,
+.pds-heading {
+    background: linear-gradient(to bottom, #eee, #ccc);
+    color: #999;
+    border: 1px solid #aaa;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 10px;
+    cursor: pointer;
+    float: left;
+}
+
+.act .notice-heading,
+.act .pds-heading {
+    border-color: #e0652c;
+    border-bottom-color: #fff;
+    background: #fff;
+    color: #e0652c;
+    outline: 0;
+}
+
+.notice-list,
+.pds-list {
+    box-sizing: border-box;
+    width: 100%;
+    list-style-type: square;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    padding-left: 20px;
+}
+
+.notice-list li,
+.pds-list li {
+    margin: 10px 0;
+}
+
+.notice-list a,
+.pds-list a {
+    width: 285px;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notice-list time,
+.pds-list time {
+    float: right;
+}
+
+.notice-more,
+.pds-more {
+    position: absolute;
+    top: 0;
+    right: -8px;
+    padding: 8px;
+}
+
+.notice-more::before,
+.pds-more::before {
+    content: "p";
+    font-family: "webcafeicon";
+    color: #23f321;
+    position: relative;
+    top: 2px;
+}
+
+.notice-list,
+.pds-list,
+.notice-more,
+.pds-more {
+    display: none;
+}
+
+.act .notice-list,
+.act .pds-list,
+.act .notice-more,
+.act .pds-more {
+    display: block;
+}
+
+
+/*.board {
+    background: yellow;
+    margin-top: 20px;
+}
+
+.notice,
+.pds {
+    position: relative;
+}
+
+.notice-heading,
+.pds-heading {
+    background: linear-gradient(to bottom, #eee, #ccc);
+    color: #666;
+    border: 1px solid #aaa;
+    border-radius: 5px 5px 0 0;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.act .notice-heading,
+.act .pds-heading {
+    background: #fff;
+    color: #e0652c;
+    border: 1px solid #aaa;
+    border-bottom: 0;
+    border-radius: 5px 5px 0 0;
+    border-color: #e0652c;
+}
+
+.notice-heading {}
+
+.pds-heading {}
+
+.notice-list,
+.pds-list {
+    background: pink;
+    list-style-type: square;
+    margin-top: 20px;
+}
+
+.notice-list time,
+.pds-list time {
+    float: right;
+}
+
+.notice-more,
+.pds-more {
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+
+.notice-more::before,
+.pds-more::before {
+    content: "p";
+    color: #23f321;
+    font-family: "webcafeIcon";
+    position: relative;
+    top: 2px;
+}*/
+
 .slogan {
     height: 10vh;
 }
