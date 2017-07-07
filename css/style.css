@@ -779,6 +779,7 @@ a {
     color: #23f321;
     position: relative;
     top: 2px;
+    margin-right: 2px;
 }
 
 .notice-list,
@@ -936,6 +937,7 @@ a {
     color: #23f321;
     position: relative;
     top: 2px;
+    margin-right: 2px;
 }
 
 
@@ -1075,11 +1077,17 @@ a {
     transition: all 0.5s;
 }
 
-.related-list:hover,
-.related-list:focus {
+.list-act {
     height: 125px;
     padding: 5px 0;
 }
+
+
+/*.related-list:hover,
+.related-list:focus {
+    height: 125px;
+    padding: 5px 0;
+}*/
 
 .related-list a {
     display: block;
@@ -1165,6 +1173,190 @@ a {
     padding-top: 19px;
     overflow: hidden;
     background: pink url("images/backpage_forwardpage.png");
+}*/
+
+
+/*인기사이트*/
+
+.favorite {
+    background: linear-gradient(to bottom, #eee, #ccc);
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.favorite-heading {
+    font-family: "Noto Sans Bold";
+    font-size: 1.6rem;
+}
+
+.favorite-heading span {
+    color: red;
+}
+
+.favorite-list {
+    padding: 0;
+    margin: 10px 0 0 0;
+    overflow: hidden;
+}
+
+.favorite-list li {
+    counter-increment: number;
+    position: relative;
+}
+
+.favorite-list li::before {
+    content: counter(number, decimal);
+    border: 1px soild #aaa;
+    border-radius: 5px;
+    color: #fff;
+    background: #aaa;
+    padding: 0 5px;
+    margin-right: 5px;
+    font-size: 1.2rem;
+}
+
+.up,
+.stop,
+.down {
+    font-style: normal;
+    width: 9px;
+    height: 0;
+    padding-top: 11px;
+    overflow: hidden;
+    background: url("images/rank.png") no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.stop {
+    background-position: 0 50%;
+}
+
+.down {
+    background-position: 0 100%;
+}
+
+.favorite-more {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 8px;
+}
+
+.favorite-more::before {
+    content: "p";
+    font-family: "webcafeicon";
+    color: #23f321;
+    margin-right: 3px;
+    position: relative;
+    top: 2px;
+}
+
+
+/*.favorite {
+    background: linear-gradient(to bottom, #eee, #ccc);
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.favorite-heading {
+    font-family: "Noto Sans Bold";
+    font-size: 1.6rem;
+}
+
+.favorite-heading span {
+    color: red;
+}
+
+.favorite-list {
+    padding: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.no1::before {
+    content: "1";
+    border: 1px soild #aaa;
+    border-radius: 5px;
+    color: #fff;
+    background: #aaa;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+.no2::before {
+    content: "2";
+    border: 1px soild #aaa;
+    border-radius: 5px;
+    color: #fff;
+    background: #aaa;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+.no3::before {
+    content: "3";
+    border: 1px soild #aaa;
+    border-radius: 5px;
+    color: #fff;
+    background: #aaa;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+.no4::before {
+    content: "4";
+    border: 1px soild #aaa;
+    border-radius: 5px;
+    color: #fff;
+    background: #aaa;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+.up,
+.stop,
+.down {
+    width: 9px;
+    height: 11px;
+    padding: 11px 0 0 0;
+    overflow: hidden;
+    background: url("images/rank.png") no-repeat;
+}
+
+.stop {
+    background-position: 0 50%;
+}
+
+.down {
+    background-position: 0 100%;
+}
+
+.favorite-list em {
+    float: right;
+}
+
+.favorite-more {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.favorite-more::before {
+    content: "p";
+    font-family: "webcafeicon";
+    color: #23f321;
+    margin-right: 3px;
+    position: relative;
+    top: 2px;
 }*/
 
 .slogan {
