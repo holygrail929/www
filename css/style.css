@@ -863,25 +863,27 @@ a {
 /*새소식*/
 
 .news {
-    background: yellow;
     margin-top: 20px;
     position: relative;
 }
 
+.news::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(to right, #aaa, #fff);
+    top: 35px;
+    left: 0;
+}
+
 .news-heading {
-    background: lime;
     font-family: "Noto Sans Bold";
     font-size: 1.6rem;
     color: red;
 }
 
-.news-item-heading::before {
-    content: "r";
-    font-family: "webcafeicon";
-}
-
 .news-item {
-    background: skyblue;
     margin-top: 30px;
     padding-left: 130px;
     position: relative;
@@ -891,16 +893,37 @@ a {
     display: block;
 }
 
+.news-item-heading {
+    font-family: "Noto Sans Bold"
+}
+
+.news-item-heading::before {
+    content: "r";
+    font-family: "webcafeicon";
+    position: relative;
+    top: 2px;
+}
+
+.news-item-date,
+.news-item-brief {
+    margin: 5px 0 0 1em;
+    display: block;
+}
+
 .news-item-thumbnail {
-    background: orange;
     margin: 0;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 1px;
+    left: 5px;
+    text-align: center;
+}
+
+.news-item-thumbnail img {
+    margin-bottom: 15px;
+    box-shadow: 0 10px 15px 0 #aaa;
 }
 
 .news-more {
-    background: pink;
     position: absolute;
     top: -8px;
     right: -8px;
